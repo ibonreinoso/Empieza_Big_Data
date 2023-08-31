@@ -53,3 +53,51 @@ SELECT nombre_producto, precio
 FROM productos
 ORDER BY precio DESC
 LIMIT 3;
+
+
+/* BLOQUE EJERCICIOS */
+
+SELECT *
+FROM practicassql.socios
+WHERE NUM_SOCIO < 20000;
+
+
+SELECT *
+FROM practicassql.dgt
+WHERE PUNTOS < 5;
+
+
+-- IN/BETWEEN/LIKE
+
+SELECT *
+FROM practicassql.dgt
+WHERE DNI LIKE '2%';
+
+
+SELECT *
+FROM practicassql.banco
+WHERE IBAN_ASOCIADO LIKE 'FR%' ;
+
+
+SELECT *
+FROM practicassql.socios
+WHERE ACCIONES BETWEEN 100 AND 600;
+
+
+SELECT *
+FROM practicassql.banco
+WHERE NUM_TARJETA BETWEEN 50000000 AND 80000000;
+
+
+SELECT *
+FROM practicassql.banco
+WHERE TITULAR IN ('MIGUEL', 'JUAN');
+
+
+SELECT *
+FROM practicassql.socios
+WHERE NOMBRE NOT IN ('MARY', 'PELAYO');
+
+
+--AGREGACIONES Y GROUP BY
+
